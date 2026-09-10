@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>А вы любите цветочки?</title>
+    <link rel="stylesheet" href="css_style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌷 Мир цветов</div>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="flowers.html">Виды цветов</a>
+        <a href="care.html">Уход</a>
+        <a href="facts.html">Факты</a>
+        <a href="form.html" class="active">Опрос</a>
+    </nav>
+</header>
+
+<main class="page">
+
+    <section class="page-header">
+        <h1>А вы любите цветочки?</h1>
+        <p>
+            Нам интересно узнать ваше мнение!
+        </p>
+    </section>
+
+    <section class="form-container">
+
+        <form id="flowerForm">
+
+            <div class="form-group">
+                <label>
+                    Любите ли цветочки?
+                </label>
+
+                <div class="radio-group">
+
+                    <label class="radio-label">
+                        <input
+                            type="radio"
+                            name="loveFlowers"
+                            value="Да"
+                            required
+                        >
+                        Да
+                    </label>
+
+                    <label class="radio-label">
+                        <input
+                            type="radio"
+                            name="loveFlowers"
+                            value="Нет"
+                        >
+                        Нет
+                    </label>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="reason">
+                    Почему вы любите цветочки?
+                </label>
+
+                <textarea
+                    id="reason"
+                    name="reason"
+                    rows="5"
+                    placeholder="Напишите свой ответ..."
+                ></textarea>
+            </div>
+
+            <button type="submit" class="button">
+                Отправить
+            </button>
+
+        </form>
+
+        <div id="formMessage" class="form-message"></div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>2026 Мир цветов</p>
+</footer>
+
+<script src="js_script.js"></script>
+
+</body>
+</html>
